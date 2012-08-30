@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Task18" />
+		<Option pch_mode="2" />
+		<Option compiler="c11_mingw64_compiler_with_sdl" />
+		<Build>
+			<Target title="Debug">
+				<Option output="Build\SpaceAttackers!_Debug_x64" prefix_auto="1" extension_auto="1" />
+				<Option working_dir=".\Build" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="c11_mingw64_compiler_with_sdl" />
+				<Compiler>
+					<Add option="-Wshadow" />
+					<Add option="-Winit-self" />
+					<Add option="-Wredundant-decls" />
+					<Add option="-Wcast-align" />
+					<Add option="-Wundef" />
+					<Add option="-Wfloat-equal" />
+					<Add option="-Winline" />
+					<Add option="-Wunreachable-code" />
+					<Add option="-Wmissing-declarations" />
+					<Add option="-Wswitch-default" />
+					<Add option="-Weffc++" />
+					<Add option="-Wmain" />
+					<Add option="-pedantic-errors" />
+					<Add option="-pedantic" />
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-DDEBUG" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="Build\SpaceAttackers!_Release_x64" prefix_auto="1" extension_auto="1" />
+				<Option working_dir=".\Build" />
+				<Option object_output="obj\Release\" />
+				<Option type="0" />
+				<Option compiler="c11_mingw64_compiler_with_sdl" />
+				<Compiler>
+					<Add option="-march=core2" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="C:\mingw64\include" />
+			<Add directory=".\DemoEngine" />
+		</Compiler>
+		<Linker>
+			<Add option="src/game.res" />
+			<Add library="mingw32" />
+			<Add library="SDLmain" />
+			<Add library="SDL.dll" />
+			<Add library="user32" />
+			<Add library="gdi32" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+			<Add library="SDL_image" />
+			<Add library="SDL_gfx" />
+			<Add library="SDL_ttf" />
+			<Add library="SDL_mixer" />
+			<Add directory="C:\mingw64\lib" />
+		</Linker>
+		<Unit filename="Src\DemoEngine\Accelerational.hpp" />
+		<Unit filename="Src\DemoEngine\Animation.cpp" />
+		<Unit filename="Src\DemoEngine\Animation.hpp" />
+		<Unit filename="Src\DemoEngine\Any.cpp" />
+		<Unit filename="Src\DemoEngine\Any.hpp" />
+		<Unit filename="Src\DemoEngine\AnyBase.hpp" />
+		<Unit filename="Src\DemoEngine\Assert.hpp" />
+		<Unit filename="Src\DemoEngine\Circle.hpp" />
+		<Unit filename="Src\DemoEngine\CollisionDetector.cpp" />
+		<Unit filename="Src\DemoEngine\CollisionDetector.hpp" />
+		<Unit filename="Src\DemoEngine\Colored.hpp" />
+		<Unit filename="Src\DemoEngine\Ellipse.hpp" />
+		<Unit filename="Src\DemoEngine\EventTypes.hpp" />
+		<Unit filename="Src\DemoEngine\Fillable.hpp" />
+		<Unit filename="Src\DemoEngine\Font.hpp" />
+		<Unit filename="Src\DemoEngine\Game.cpp" />
+		<Unit filename="Src\DemoEngine\Game.hpp" />
+		<Unit filename="Src\DemoEngine\GameObject.hpp" />
+		<Unit filename="Src\DemoEngine\IRenderable.hpp" />
+		<Unit filename="Src\DemoEngine\IUpdateable.hpp" />
+		<Unit filename="Src\DemoEngine\Image.cpp" />
+		<Unit filename="Src\DemoEngine\Image.hpp" />
+		<Unit filename="Src\DemoEngine\ImageAlpha.cpp" />
+		<Unit filename="Src\DemoEngine\ImageAlpha.hpp" />
+		<Unit filename="Src\DemoEngine\ImageColorkey.cpp" />
+		<Unit filename="Src\DemoEngine\ImageColorkey.hpp" />
+		<Unit filename="Src\DemoEngine\Initializable.hpp" />
+		<Unit filename="Src\DemoEngine\Interpolation.hpp" />
+		<Unit filename="Src\DemoEngine\InterpolationSet.hpp" />
+		<Unit filename="Src\DemoEngine\LineSegment.hpp" />
+		<Unit filename="Src\DemoEngine\Macros.hpp" />
+		<Unit filename="Src\DemoEngine\Math.hpp" />
+		<Unit filename="Src\DemoEngine\Music.hpp" />
+		<Unit filename="Src\DemoEngine\Mutex.hpp" />
+		<Unit filename="Src\DemoEngine\ParticleSystem.hpp" />
+		<Unit filename="Src\DemoEngine\PerformanceCounter.hpp" />
+		<Unit filename="Src\DemoEngine\PerformanceCounterIDs.hpp" />
+		<Unit filename="Src\DemoEngine\Pixel.hpp" />
+		<Unit filename="Src\DemoEngine\Positional.hpp" />
+		<Unit filename="Src\DemoEngine\Properties.hpp" />
+		<Unit filename="Src\DemoEngine\Random.hpp" />
+		<Unit filename="Src\DemoEngine\Rectangle.hpp" />
+		<Unit filename="Src\DemoEngine\Renderer.cpp" />
+		<Unit filename="Src\DemoEngine\Renderer.hpp" />
+		<Unit filename="Src\DemoEngine\ResourceFactory.hpp" />
+		<Unit filename="Src\DemoEngine\Scene.cpp" />
+		<Unit filename="Src\DemoEngine\Scene.hpp" />
+		<Unit filename="Src\DemoEngine\ScrollingBackground.hpp" />
+		<Unit filename="Src\DemoEngine\Singleton.hpp" />
+		<Unit filename="Src\DemoEngine\Sound.hpp" />
+		<Unit filename="Src\DemoEngine\SoundServer.hpp" />
+		<Unit filename="Src\DemoEngine\Surface.hpp" />
+		<Unit filename="Src\DemoEngine\Text.hpp" />
+		<Unit filename="Src\DemoEngine\TextUtils.hpp" />
+		<Unit filename="Src\DemoEngine\Threaded.hpp" />
+		<Unit filename="Src\DemoEngine\Timer.hpp" />
+		<Unit filename="Src\DemoEngine\TwoDimensional.hpp" />
+		<Unit filename="Src\DemoEngine\UniqueID.hpp" />
+		<Unit filename="Src\DemoEngine\Vector2.hpp" />
+		<Unit filename="Src\EntityEnemy.hpp" />
+		<Unit filename="Src\EntityExplosion.hpp" />
+		<Unit filename="Src\EntityPlayer.hpp" />
+		<Unit filename="Src\EntityProjectile.hpp" />
+		<Unit filename="Src\EventIDs.hpp" />
+		<Unit filename="Src\ExplosionSystem.hpp" />
+		<Unit filename="Src\ExplosionThread.hpp" />
+		<Unit filename="Src\HighscoreList.hpp" />
+		<Unit filename="Src\ResourceIDs.hpp" />
+		<Unit filename="Src\SceneGameOver.cpp" />
+		<Unit filename="Src\SceneGameOver.hpp" />
+		<Unit filename="Src\SceneHelp.cpp" />
+		<Unit filename="Src\SceneHelp.hpp" />
+		<Unit filename="Src\SceneHighscores.cpp" />
+		<Unit filename="Src\SceneHighscores.hpp" />
+		<Unit filename="Src\SceneLevel.cpp" />
+		<Unit filename="Src\SceneLevel.hpp" />
+		<Unit filename="Src\SceneSplashScreen.cpp" />
+		<Unit filename="Src\SceneSplashScreen.hpp" />
+		<Unit filename="Src\ShooterGame.cpp" />
+		<Unit filename="Src\ShooterGame.hpp" />
+		<Unit filename="Src\SmokeSystem.hpp" />
+		<Unit filename="Src\main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

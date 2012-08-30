@@ -1,0 +1,35 @@
+# ////////////////////////////////////////////////////////////////////////////////
+#
+# File is formatted as follows:
+#
+# COMMENTS
+#
+# Each '#' stands for comment line. It must be the first character on comment line.
+# Comments can appear on any line.
+#
+# FRAMES
+#
+# frame (SDL rectangle) definitions are listed after line which states simple "frames" and nothing more
+# Work "frames" must be the only word on that line, and line must not contain any whitespaces.
+# 
+# Each frame definition is an int-quadruplet {x,y,w,h}.
+# 
+# SEQUENCES
+# 
+# Sequences are specified after word "sequences", and same conditions apply as for "frame" word. 
+# Each sequence is an integer list, each integer separated by a SINGLE whitespace, and no whitespace after
+# last integer is allowed.
+#
+# Each integer stands for index in the frame array, and order of frames listed previously 
+# affects these values. First frame quadruplet is in index 0, second in index 1, and so on.
+#
+# ////////////////////////////////////////////////////////////////////////////////
+frames
+# Menu texts
+0 0 256 32
+0 32 256 32
+0 64 256 32
+0 96 256 32
+sequences
+# Menu texts
+0 1 2 3
